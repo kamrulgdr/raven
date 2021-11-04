@@ -1,0 +1,542 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,700;1,400&display=swap');
+
+@font-face {
+  font-family: 'Enter the Grid 2 Regular';
+  src: url(/Enter\ the\ Grid\ 2.otf);
+}
+
+@import './responsive.css';
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  color: white;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+section {
+  padding: 0% 0%;
+  margin: 60px 0;
+  
+}
+
+h1 {
+  font-family: 'Enter the Grid 2 Regular';
+  font-size: 40px;
+  font-weight: 500;
+  color: #fff;
+
+}
+
+h2 {
+  font-family: 'Enter the Grid 2 Regular';
+  font-size: 24px;
+  font-weight: 500;
+  color: #fff;
+
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* =================
+Header CSS
+================== */
+header {
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(../img/desktop.png);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+header .nav-section{
+  margin-top: 0;
+}
+
+header nav {
+  display: flex;
+  flex-direction: row;
+  padding: 2% 6%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header #left-logo {
+  width: 7rem;
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  display: none;
+}
+
+
+
+header .nav-div {
+  flex: 1;
+  text-align: right;
+}
+
+.nav-div ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 8px 12px;
+  position: relative;
+}
+
+.nav-div ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 13px;
+  margin-left: 3rem;
+}
+
+.nav-div ul li::after {
+  content: '';
+  width: 0%;
+  height: 2px;
+  background: #f44336;
+  display: block;
+  margin: auto;
+  transition: all .3s ease-in-out;
+  position: absolute;
+  right: 10%;
+}
+
+.nav-div ul li:hover::after {
+  width: 50px;
+}
+
+header::after {
+  content: "";
+  width: 100%;
+  height: 36px;
+  position: absolute;
+  display: inline-block;
+  bottom: -48px;
+  left: 0;
+  background: #051C3B;
+}
+
+#big-logo {
+  width: 350px;
+  position: absolute;
+  top: 0%;
+  left: 2%;
+}
+
+/* Navbar CSS */
+
+header nav .hamburger-btn {
+  width: 77px;
+  height: 50px;
+  position: absolute;
+  left: 80%;
+  top: 10%;
+}
+
+.hamburger-btn{
+  display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* =====================
+Gostwolf section
+====================== */
+section.core {
+  background: linear-gradient(rgba(4, 9, 30, 0.5), rgba(4, 9, 30, 0.5)), url(../img/hero-background.png);
+  height: 100vh;
+  width: 100%;
+  position: relative;
+}
+
+section .core-wrapper .wrap>div {
+  background: linear-gradient(rgba(2, 35, 77, 0.5), rgba(2, 35, 77, 0.5));
+  display: grid;
+  grid-template-columns: 1fr 250px;
+  grid-gap: 2rem;
+  position: absolute;
+  left: 67%;
+  top: 60%;
+  height: auto;
+  width: 70%;
+  padding: 26px 0;
+}
+
+section .left-contant {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-75%, -50%);
+  text-align: left;
+}
+
+section .img-head img {
+  width: 12%;
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+section .img-head::after {
+  content: '';
+  display: inline-block;
+  width: 25%;
+  height: 2px;
+  background: #fff;
+  left: 57%;
+  top: 16%;
+  position: absolute;
+}
+
+section .img-head::before {
+  content: '';
+  display: inline-block;
+  width: 25%;
+  height: 2px;
+  background: #fff;
+  left: 17%;
+  top: 16%;
+  position: absolute;
+}
+
+section .core-wrapper p {
+  margin-top: 10px;
+  font-size: 18px;
+  line-height: 1.4;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+section .core-wrapper .image-right {
+  margin-top: 1rem;
+  margin-left: 16px;
+}
+
+section .core-wrapper .image-right .wolf{
+  margin:0 0 2rem 10px;
+  width: 150px;
+}
+
+section .core-wrapper .image-right .logo{
+  margin-top: -16px;
+  width: 150px;
+}
+
+section .core-wrapper h1::after {
+  content: '';
+  display: inline-block;
+  width: 70%;
+  height: 2px;
+  background: #fff;
+  margin: auto;
+  transition: all .3s ease-in-out;
+  top: -33px;
+  position: relative;
+}
+
+.core-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 2rem;
+}
+
+
+section.core .core-wrapper::after{
+  content: "";
+  width: 100%;
+  height: 36px;
+  position: absolute;
+  display: inline-block;
+  bottom: -48px;
+  left: 0;
+  background: #051C3B;
+}
+
+/* =====================
+core leadership section
+====================== */
+section.leadership .wrapper {
+  display: grid;
+  grid-template-columns: 420px 1fr;
+  grid-gap: 0;
+  position: relative;
+}
+
+section.leadership .wrapper .content {
+  background: #282728;
+  position: relative;
+  padding: 1rem;
+}
+
+section.leadership .wrapper .content .top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+section.leadership .wrapper .content .top h2 {
+  font-size: 24px;
+}
+
+section.leadership .wrapper .content .top::after {
+  content: '';
+  display: inline-block;
+  width: 90%;
+  height: 2px;
+  background: #fff;
+  left: 4%;
+  top: 18%;
+  position: absolute;
+}
+
+section.leadership .wrapper .content .top img {
+  width: 60px;
+  height: auto;
+  padding-bottom: rem;
+  position: absolute;
+  left: 80%;
+  top: 2%;
+}
+
+section.leadership .wrapper .lead-img {
+  width: 100%;
+  height: auto;
+}
+
+section.leadership .wrapper .content .para {
+  font-size: 20px;
+  margin-top: 4rem;
+}
+
+
+section.leadership .wrapper::after {
+  content: "";
+  width: 100%;
+  height: 36px;
+  position: absolute;
+  display: inline-block;
+  bottom: -48px;
+  left: 0;
+  background: #051C3B;
+}
+
+
+/* ==============================================================
+Professional and collegiat sports, Corporate & Investment section
+=============================================================== */
+section.professional{
+  position: relative;
+}
+
+section .top-professional {
+  background-color: #6488BF;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+section .top-professional img {
+  width: 120px;
+}
+
+
+section.professional .top-professional margin1{
+  margin-left: 2rem;
+}
+
+section.professional .top-professional margin2{
+  margin-right: 2rem;
+}
+
+.professional .wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1.2rem;
+}
+
+.professional .content h1 {
+  background-color: #03244D;
+  margin-bottom: 20px;
+  text-align: center;
+  padding: 8px;
+}
+
+.professional .wrapper .meta-wrap {
+  background-color: #343537;
+  padding: 16px 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1rem;
+}
+
+.professional .wrapper .meta-wrap .meta-data h2 {
+  text-align: center;
+  padding: 8px;
+}
+
+.professional .wrapper .meta-wrap .meta-data p {
+  font-size: 16px;
+  padding: 10px;
+  line-height: 1.1;
+}
+
+.professional .wrapper .meta-wrap .meta-data i {
+  font-size: 16px;
+  padding: 10px;
+  line-height: 1.1;
+}
+
+.professional .wrapper .meta-wrap .meta-data img {
+  margin-top: 5px;
+  height: auto;
+}
+
+.professional .wrapper .meta-wrap .meta-data .para {
+  margin-top: 5px;
+  width: 100%;
+  height: auto;
+  padding: 5px;
+}
+
+.professional .wrapper .meta-wrap .meta-data .para span {
+  padding-top: 10px;
+  text-align: right;
+}
+
+.professional .wrapper .content-right img {
+  height: auto;
+  align-items: center;
+  padding: 3rem 16px 0 16px;
+}
+
+.professional .wrapper .content-left img {
+  padding-top: 0rem;
+  height: 100%;
+}
+
+section.professional::after {
+  content: "";
+  width: 100%;
+  height: 36px;
+  position: absolute;
+  display: inline-block;
+  bottom: -48px;
+  left: 0;
+  background: #051C3B;
+}
+
+/* ===================
+Investment section
+====================== */
+.professional .wrapper .img-left {
+  background: #6488BF;
+  position: relative;
+  margin-top: 16px;
+}
+
+.professional .wrapper .img-left img {
+    width: 100%;
+    height: auto;
+    /* border: 2px solid red; */
+    position: absolute;
+    top: 15%;
+    padding: 2rem 1rem;
+}
+
+.professional .wrapper .meta-wrap .meta-data .compass-img {
+  width: 100%;
+  height: 17rem;
+}
+
+/* section.investment .margin1{
+  margin-left: 2rem;
+} */
+
+/* section.investment .margin2{
+  margin-right: 2rem;
+} */
+
+/* ===================
+footer section
+====================== */
+footer {
+  background: #02234D;
+  padding: 0% 6%;
+}
+
+footer.footer .wrapper{
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(rgba(2, 35, 77, 0.8), rgba(2, 35, 77, 0.8)), url(../img/footer-img.png);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 2rem;
+}
+
+.footer-img img {
+  width: 25%;
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  transform: translate(-100%, -50%);
+  text-align: center;
+}
+
+.footer-content {
+  width: 40%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(0%, -50%);
+  text-align: center;
+}
+
+.footer-content p {
+  font-size: 24px;
+  line-height: 1.4;
+  font-weight: 600;
+  margin-bottom: 3rem;
+  padding-top: -4rem;
+  text-align: left;
+}
+
+.footer-content em {
+  line-height: 1.5;
+}
+
+
+
+
+
+

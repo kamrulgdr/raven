@@ -1,0 +1,450 @@
+@media (max-width: 768px){
+  header .nav-links{
+    position: fixed;
+    top: 185px;
+    left: -5000px;
+    /* left: 50%; */
+    transform: translateX(-50%);
+    background: #235161;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    border-radius: 20px;
+    padding: 20px 0;
+    box-shadow: 0px 10px 50px 5px #235161;
+    transition: all .3s ease-in-out; 
+    z-index: 111;
+  }
+
+  header .nav-links.open{
+    left: 50%;
+  }
+
+  .hamburger-btn{
+    display: block;
+    border: none;
+    background: none;
+    outline: none;
+  }
+
+  header .nav-links li{
+    padding-bottom: 10px;
+    text-align: center;
+  }
+
+  .nav-div ul li a {
+    margin-left: 0;
+}
+
+  /* header .nav-links li:last-child{
+    padding-bottom: 0;
+  } */
+
+  header .nav-links a{
+    color: blue;
+  }
+
+  header #left-logo{
+    display: block;
+  }
+
+  #big-logo{
+    display: none;
+  }
+
+  .nav-div ul li:hover::after{
+    display: none;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ===================
+RESPONSIVE CSS PART
+====================== */
+@media(max-width: 1333px) {
+  .professional .wrapper .img-left {
+    height: 49em;
+  }
+
+  .professional .wrapper .meta-wrap .meta-data .compass-img {
+    height: 15.5rem;
+  }
+}
+
+@media (max-width: 1300px) {
+  .professional .wrapper .meta-wrap .meta-data .compass-img {
+    height: 14.5rem;
+  }
+}
+
+@media(max-width: 1290px) {
+  h1 {
+    font-size: 35px;
+  }
+
+  section.leadership .wrapper .content .top::after {
+    top: 20%;
+  }
+}
+
+@media(max-width: 1276px) {
+  .professional .wrapper .img-left {
+    height: 51em;
+  }
+
+  .professional .wrapper .meta-wrap .meta-data .compass-img {
+    height: 15.5rem;
+  }
+
+  .professional .wrapper .meta-wrap .meta-data img {
+    height: 21rem;
+  }
+}
+
+@media(max-width: 1255px){
+  .professional .wrapper .img-left {
+    height: 52em;
+}
+
+.professional .wrapper .content-right img {
+  padding: 15rem 16px 0 16px;
+}
+
+}
+
+
+
+
+
+
+@media (max-width: 1024px){
+  section .core-wrapper .wrap>div {
+    width: 82%;
+}
+
+section .core-wrapper .image-right {
+  margin-top: 4rem;
+}
+
+section .core-wrapper .wrap>div {
+  left: 70%;
+}
+
+section.leadership .wrapper .lead-img img {
+  max-width: 100%;
+  height: 100%;
+}
+
+section.leadership .wrapper .content .top::after {
+  top: 24%;
+  left: 3%;
+}
+
+section.leadership .wrapper .content .top {
+  margin-bottom: -2rem;
+}
+
+h1 {
+  font-size: 27px;
+}
+
+.professional .wrapper .content-right img {
+  height: 82rem;
+  padding-top: 20px;
+}
+
+.professional .wrapper .img-left img {
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
+  top: 0;
+}
+
+.professional .wrapper .meta-wrap .meta-data .compass-img {
+  height: 11rem;
+}
+
+.professional .wrapper .meta-wrap .meta-data h2 {
+  font-size: 20px;
+}
+
+.professional .wrapper .img-left {
+  height: 57em;
+}
+
+.footer-img img {
+  width: 35%;
+  top: 50%;
+  left: 40%;
+}
+
+.footer-content p {
+  padding-top: 4rem;
+  font-size: 22px;
+  line-height: 1.1;
+}
+
+}
+
+
+@media (max-width: 768px){
+  section .core-wrapper p {
+    font-size: 14px;
+    line-height: 1.2;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+section .core-wrapper .wrap>div {
+  padding: 16px 0;
+}
+
+section .core-wrapper .image-right {
+  margin-top: 19px;
+}
+
+section.leadership .wrapper {
+  grid-template-columns: 1fr;
+}
+
+section.leadership .wrapper .content .top::after {
+  top: 33%;
+  left: 2%;
+}
+
+.professional .wrapper {
+  grid-template-columns: 1fr;
+}
+
+.professional .wrapper .meta-wrap .meta-data img {
+  height: 15rem;
+}
+
+section .top-professional img {
+  width: 90px;
+  margin-left: 0;
+}
+
+h1 {
+  font-size: 23px;
+}
+
+.professional .wrapper .content-right img {
+  height: auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+section.investment .margin1{
+  margin: 0;
+}
+
+section.investment .margin2{
+  margin: 0;
+}
+
+.professional .wrapper .img-left img {
+  height: 100%;
+}
+
+.professional .wrapper .img-left {
+  height: 28em;
+}
+
+.professional .wrapper {
+  grid-gap: 0;
+}
+
+.professional .wrapper .meta-wrap .meta-data .compass-img {
+  height: 14rem;
+}
+
+}
+
+@media (max-width: 740px){
+  section .core-wrapper .wrap>div {
+    padding: 0;
+}
+}
+
+@media (max-width: 696px){
+  section .core-wrapper .wrap>div {
+    left: 70%;
+}
+
+section .core-wrapper .wrap>div {
+  grid-gap: 0;
+  
+}
+
+section .core-wrapper .image-right {
+  margin-top: 58px;
+}
+
+section .core-wrapper .wrap>div {
+  width: 90%;
+}
+
+section .core-wrapper .wrap>div {
+  left: 72%;
+}
+
+section .core-wrapper p {
+  font-size: 13px;
+  line-height: 1.1;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 1rem;
+}
+
+}
+
+@media (max-width: 546px){
+  section .core-wrapper .wrap>div {
+    width: 94%;
+}
+
+section .core-wrapper .wrap>div {
+  left: 73%;
+}
+
+.footer-content p {
+  margin-bottom: 1rem;
+
+}
+}
+
+@media (max-width: 520px){
+  section .core-wrapper .wrap>div {
+    width: 99%;
+}
+
+section .core-wrapper .wrap>div {
+  left: 74%;
+}
+}
+
+@media (max-width: 428px){
+  section .core-wrapper .wrap>div {
+    grid-template-columns: 1fr;
+    position: absolute;
+    left: 70%;
+    height: auto;
+    width: 80%;
+    padding: 26px 0;
+    top: 32rem;
+}
+
+  section .core-wrapper p {
+    font-size: 16px;
+    line-height: 1.2;
+}
+
+section .core-wrapper .image-right {
+  margin-left: 27%;
+}
+
+section .core-wrapper .image-right {
+  margin-top: 1px;
+}
+
+section .core-wrapper .left-contant .image-right .wolf {
+  margin: 0 0 14px 14px;
+  width: 120px;
+}
+
+section .core-wrapper .image-right .logo {
+  margin-top: -7px;
+  width: 100px;
+  margin-left: 20px;
+}
+
+h1 {
+  font-size: 18px;
+  margin-left: 12px;
+  text-align: center;
+}
+
+section .top-professional img {
+  width: 60px;
+  margin-left: 0;
+}
+
+section .img-head{
+  margin-top:0;
+}
+
+section .img-head img {
+  width: 20%;
+  top: 10%;
+}
+
+section .img-head::before {
+  left: 13%;
+  top: 11%;
+}
+
+section .img-head::after {
+  left: 62%;
+  top: 11%;
+}
+
+section.leadership .wrapper .content .top::after {
+  top: 25%;
+  left: 4%;
+}
+
+.professional .wrapper .meta-wrap .meta-data .compass-img {
+  height: 16rem;
+}
+
+footer.footer .wrapper{
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(rgba(2, 35, 77, 0.8), rgba(2, 35, 77, 0.8)), url(../img/footer-img.png);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 2rem;
+}
+
+}
+
+@media (max-width: 428px){
+  section .core-wrapper p {
+    font-size: 12px;
+    line-height: 1.1;
+}
+
+  section .core-wrapper .wrap>div {
+    left: 74%;
+    width: 96%;
+    top: 19rem;
+    padding: 0;
+  }
+
+  section .core-wrapper .image-right {
+    margin-top: 0px;
+}
+
+section .core-wrapper .image-right .logo {
+  width: 91px;
+}
+}
+
