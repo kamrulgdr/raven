@@ -476,50 +476,52 @@ Investment section
   height: 17rem;
 }
 
-/* section.investment .margin1{
-  margin-left: 2rem;
-} */
-
-/* section.investment .margin2{
-  margin-right: 2rem;
-} */
 
 /* ===================
 footer section
 ====================== */
-footer {
-  background: #02234D;
-  padding: 0% 6%;
+footer{
+  background: #03244D !important;
 }
 
-footer.footer .wrapper{
-  height: 100vh;
-  width: 100%;
+
+footer.footer #wrapper {
+  position: absolute;
+  left: 0;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
   background: linear-gradient(rgba(2, 35, 77, 0.8), rgba(2, 35, 77, 0.8)), url(../img/footer-img.png);
   background-position: center;
   background-size: cover;
-  position: relative;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 2rem;
+  height: 100vh;
+  width: 100%;
+  margin-left: 0;
+  margin-right: 3rem !important;
 }
+
+footer.footer #wrapper .footer-img{
+  flex: 30%;
+}
+
 
 .footer-img img {
   width: 25%;
   position: absolute;
   top: 50%;
-  left: 30%;
-  transform: translate(-100%, -50%);
+  left: 20%;
+  transform: translate(-50%, -50%);
   text-align: center;
 }
 
-.footer-content {
-  width: 40%;
+footer.footer #wrapper .footer-content {
+  /* width: 40%; */
   position: absolute;
   top: 50%;
-  left: 50%;
+  left: 30%;
   transform: translate(0%, -50%);
   text-align: center;
+  padding: 6rem;
 }
 
 .footer-content p {
@@ -527,12 +529,17 @@ footer.footer .wrapper{
   line-height: 1.4;
   font-weight: 600;
   margin-bottom: 3rem;
-  padding-top: -4rem;
+  padding-top: ;
   text-align: left;
 }
 
-.footer-content em {
+.footer-content i {
+  font-family: 'Enter the Grid 2 Regular';
+  font-size: 24px;
+  /* font-weight: 600; */
+  letter-spacing: 2px;
   line-height: 1.5;
+  text-align: left;
 }
 
 
