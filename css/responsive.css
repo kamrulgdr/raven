@@ -446,5 +446,25 @@ footer.footer .wrapper{
 section .core-wrapper .image-right .logo {
   width: 91px;
 }
+
+.professional .wrapper .meta-wrap {
+  grid-template-columns: 1fr;
 }
+}
+
+@media (max-width: 320px){
+  footer.footer .wrapper {
+    display: grid;
+    grid-template-columns: 1fr!important;
+    grid-gap: 0;
+    height: 100vh;
+    width: 100%;
+   
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    
+}
+}
+
 
