@@ -6,8 +6,8 @@ hamburgerBtn.addEventListener('click', ()=> {
   navLinks.classList.toggle('open');
   isOpen = navLinks.classList.contains('open');
   if(isOpen){
-    toggleImg.src = '../img/close_black_24dp.svg';
+    toggleImg.src = '../img/close-icon.png';
   }else{
-    toggleImg.src = '../img/icon-hamburger.svg';
+    toggleImg.src = '../img/hamburger.png';
   }
 })
