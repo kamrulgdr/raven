@@ -5,8 +5,6 @@
   src: url(/Enter\ the\ Grid\ 2.otf);
 }
 
-@import './responsive.css';
-
 
 * {
   padding: 0;
@@ -19,6 +17,10 @@ body {
   font-family: 'Lato', sans-serif;
   color: white;
   box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+.root{
   overflow-x: hidden;
 }
 
@@ -515,7 +517,6 @@ footer.footer #wrapper .footer-img{
 }
 
 footer.footer #wrapper .footer-content {
-  /* width: 40%; */
   position: absolute;
   top: 50%;
   left: 30%;
@@ -529,14 +530,12 @@ footer.footer #wrapper .footer-content {
   line-height: 1.4;
   font-weight: 600;
   margin-bottom: 3rem;
-  padding-top: ;
   text-align: left;
 }
 
 .footer-content i {
   font-family: 'Enter the Grid 2 Regular';
   font-size: 24px;
-  /* font-weight: 600; */
   letter-spacing: 2px;
   line-height: 1.5;
   text-align: left;
